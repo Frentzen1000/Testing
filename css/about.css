@@ -1,0 +1,64 @@
+/* ABOUT ME */
+
+#more-about-me{
+  background-color: black;
+  border-radius: 2.5rem 2.5rem 0 0;
+  width: 100%;
+}
+
+.more-about-me-title{
+  color: white;
+  padding-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.more-about-me-container{
+  margin-left: 8rem;
+  color: white;
+  line-height: 2rem;
+  padding-bottom: 6rem;
+}
+
+
+/* SKILL */
+
+.skill-container{
+  margin-left: 8rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.skill-detail{
+  border: solid 0.2rem black;
+  width: 80%;
+  border-radius: 1.25rem;
+
+  ul{
+    line-height: 4rem;
+    margin-left: 4rem;
+    margin-bottom: 3rem;
+    list-style-type:none;
+  }
+}
+
+.tool-icon-container{
+  text-align: center;
+
+  img{
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.skill-heading{
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.bullet-point{
+  margin-right: 1rem;
+}
+
+
+

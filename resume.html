@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">  
+    <link rel="stylesheet" href="css/resume.css">  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+
+    <title></title>
+
+    </head>
+
+    <body>
+      <!-- NAVIGATION -->
+      <header>
+        <nav class="main-menu grid content-grid-menu add-gutters-menu">
+          <a class="logo" href="main.html"> <img src ="img/logo.png" alt="Logo of my portolio"></a>
+          <div class="menu-container" > 
+            <a href="main.html" class="navigationItem ">Work</a>
+            <a href="about.html" class="navigationItem ">About</a>
+            <a href="resume.html" class="navigationItem active" >Resume</a>
+          </div>
+          <div class="menu-container-2"> 
+            <a href="https://www.linkedin.com/in/annievo03/">LinkedIn</a>
+           </div>
+        </nav>
+      </header>
+
+      <!-- ABOUT ME -->
+      <section id="my-resume">
+        <h2 >My Resume</h2>
+      </section>
+
+      <section id="resume">
+        <img src="img/resume.png" alt="My resume" class="resume-image">
+      </section>
+
+
+
+     </body>
+
+<script>
+  // Add active class to the current button (highlight it)
+  var header = document.getElementByClass("menu-container");
+  var btns = header.getElementsByClassName("navigationItem");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }
+  </script>
+
+  <!-- Active State: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_active_element -->

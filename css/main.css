@@ -1,0 +1,277 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-weight: 100;
+  text-align: center;
+  font-size: 8rem;
+  /* margin: 4rem 0 1rem ; */
+}
+
+h2{
+  font-weight: 100;
+  font-size: 4rem;
+  margin: 4rem 7rem 1rem ; 
+}
+
+h3{
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+p{
+  font-size: 1.25rem;
+}
+
+li{
+  font-size: 2rem;
+}
+
+/* GRID */
+.grid{
+  display: grid;
+}
+
+/* HEADER */
+.button-nav{
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  width: 10%;
+  font-size: 1.5rem;
+  background-color: #000000;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 10rem;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-property: font-size; 
+  transition-duration: 0.25s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: #523E30 ;
+  color: #FFD4DE;
+  border: 0.1rem solid #523E30;
+  font-size: 0.95rem;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+}
+
+
+/* NAVIGATOR */
+header {
+  width: 100%;
+}
+
+.main-menu{
+  padding: 1.5rem;
+}
+.main-menu img{
+  width: 4rem;
+  margin-left: 5rem;
+  height: auto;
+  transition-property: width, height;
+  transition-duration: 0.25s;
+}
+
+.menu-container a, .menu-container-2 a{
+  font-family: "Comfortaa", serif;
+  white-space: nowrap;
+  font-weight: 400;
+  padding: 0.8rem 2.46rem;
+  padding-bottom: 1.2rem;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition-property: color;
+  transition-duration: 0.25s;
+  color: black;
+}
+
+.menu-container a:focus, .menu-container a.active { 
+  text-decoration: none;
+  background-color: black;
+  border-radius: 10rem;
+  color: white; /* Make text white */
+}
+
+.menu-container {
+  display: flex;
+  margin-top: 0.5rem;
+  height: 3.2rem;
+  justify-content: center;
+  text-align: center;
+  width: 24rem; 
+  border-radius: 10rem;
+  border: 0.2rem solid black;
+  margin-left: auto; 
+  margin-right: 2rem;
+}
+
+.menu-container-2 {
+  display: flex;
+  margin-top: 0.5rem;
+  height: 3.2rem;
+  justify-content: center;
+  text-align: center;
+  margin-right: 2rem;
+  margin-left: -3rem;
+  text-decoration: underline;
+}
+
+/*ABOUT ME*/
+.about-me-button-container{
+  margin: 0;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.intro-text{
+  text-align: center;
+  margin-top: -5rem;
+}
+
+.more-about-me-container{
+  margin-left: 5rem;
+}
+
+/*FEATURE PROJECT*/
+
+#feature-project{
+  background-color: black;
+  border-radius: 2.5rem 2.5rem 0 0;
+}
+
+.feature-project-container{
+  width: 90%;
+}
+
+.feature-project-title{
+  color: white;
+  padding-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.feature-project-container-card{
+  margin-left: 7rem;
+  width: 80%;
+  padding-bottom: 6rem;
+
+  img{
+    width: 100%;
+  }
+}
+
+.feature-project-container-card-detail{
+  margin-top: -12.5rem;
+  background-color: white;
+  opacity: 0.75;
+  padding-left: 3rem;
+  padding-bottom: 4rem;
+  border-radius: 0 0 1.25rem 1.25rem;
+  height: 8.25rem;
+
+  p{
+    margin-top: 0rem;
+    padding-bottom: 1.3rem;
+  }
+}
+
+.feature-project-container-card-heading{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+  width: 90%;
+}
+
+.window-icon{
+  width: 5rem;
+  height: 5rem;
+  margin-top: 0.5rem;
+}
+
+
+/*BACK TO TOP*/
+.back-to-top-button-container{
+  margin: 0;
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.copyright{
+  text-align: center;
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+
+@media (width > 82rem) {
+  .content-grid-menu{
+    grid-template-columns: 0.7fr 3fr 0.2fr;
+  }
+
+  .content-grid-two{
+    display: grid;
+  grid-template-columns: 0.8fr 0.8fr;
+  }
+
+  .content-grid-two-1{
+    grid-template-columns: 0.8fr 0.2fr;
+  }
+
+  .content-grid-three{
+    grid-template-columns: 2.5fr 2.5fr 2.5fr;
+    display: grid;
+    justify-self: center;
+    column-gap: 3rem;
+    row-gap: 2rem;
+
+    
+  }
+}
+
+
+@media (min-width: 55rem) and (max-width: 82rem) {
+  
+  .content-grid-menu{
+    grid-template-columns: 0.7fr 3fr 0.2fr;
+  }
+
+  .content-grid-two{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .content-grid-two-1{
+    grid-template-columns: 0.8fr 0.2fr;
+  }
+
+  .content-grid-three{
+    grid-template-columns: 2.5fr 2.5fr;
+    display: grid;
+    justify-self: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+
+  .feature-project-container-card-detail{
+    padding-left: 1.5rem;
+  }
+    
+}
+
+@media (min-width: 35rem) and (max-width: 55rem){
+  .menu-container, .menu-container-2{
+  }
+
+  .content-grid-two{
+    grid-template-columns: 1fr 1fr;
+  }
+
+}

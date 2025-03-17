@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">  
+    <link rel="stylesheet" href="css/project.css">  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+
+    <title></title>
+
+    </head>
+
+    <body>
+      <!-- NAVIGATION -->
+      <header>
+        <nav class="main-menu grid content-grid-menu add-gutters-menu">
+          <a class="logo" href="main.html"> <img src ="img/logo.png" alt="Logo of my portolio"></a>
+          <div class="menu-container" > 
+            <a href="main.html" class="navigationItem active">Work</a>
+            <a href="about.html" class="navigationItem ">About</a>
+            <a href="resume.html" class="navigationItem" >Resume</a>
+          </div>
+          <div class="menu-container-2"> 
+            <a href="https://www.linkedin.com/in/annievo03/">LinkedIn</a>
+           </div>
+        </nav>
+      </header>
+
+      <!-- ABOUT ME -->
+      <section id="first-project">
+        <h2 >Vietnamese Breakfast Simulation</h2>
+        <img src="img/project1.png" alt="thumbnail of my first project">
+        <p>Course: IAT265 Multimedia Programming for Art and Design</p>
+        <p>Duration: 4 weeks</p>
+        <p>Language: JavaScript Eclipse</p>
+        <p>Individual Project</p>
+      </section>
+
+      <section id="more-about-first-project">
+        <h2>01 Project Overview</h2>
+        <p>Vietnamese Breakfast is a cooking simulation that immerses players in the process of preparing a traditional Vietnamese breakfast. 
+          The gameplay focuses on two main tasks: brewing a hot cup of coffee and making Vietnamese bread.
+           Players will interact with household items by dragging and clicking to complete each step by provided step-by-step instructions.</p>
+          <img src="img/project1.png" alt="thumbnail of my first project">
+
+          <img src="img/project1-ideation.png" alt="Image of my proposal">
+          <h2>02 Ideation and Branstorming</h2>
+          <p>The concept for this interactive simulation game centers around preparing a traditional and iconic Vietnamese breakfast, featuring “banh mi” and a hot cup of coffee.
+             As I was born and raised in Vietnam, these dishes have been an essential part of my mornings, making them a meaningful choice for this project.</p>
+
+          <h2>03 Illustration</h2>
+          <p>The illustration focuses on vibrant, hand-drawn visuals that bring Vietnamese culture to life.
+             Key elements include detailed portrayals of traditional kitchen tools, and ingredients with a peaceful setting, illustrating the authentic Vietnamese breakfast culture.
+             The primary combination of yellow, red, and orange represents the warm tone, giving a sense of nostalgia</p>
+          <img src="img/project1-illustration.png" alt="Image of my illustration">
+
+          <img src="img/project1-programming.png" alt="Image of my Eclipse code">
+          <h2>04 Programming Development</h2>
+          <p>The coding aspect focuses on creating interactive features between the program and users.
+             Java manages gameplay mechanics, including step-by-step recipes, minor animations, and sound effects to enhance realism.
+             For example, dragging a cup triggers a placement sound, controlled by a Finite State Machine (FSM) which is a programming model that manages game stages and transitions.</p>
+
+          <h2>05 Usability Testing and Iterations</h2>
+          <p>This session focuses on improving the game’s usability to ensure smooth interactions.
+             Addressing bugs in ingredient collisions with household items required excessive testing and fixes.
+              Iterations refined visuals and added guiding elements, such as a text box to enhance user flow.
+             Iterations ensure the game accurately represents Vietnamese culture while providing a seamless user experience.</p>
+          <img src="img/project1-usability.png" alt="Image of my iteration">
+
+          <h2>06 Reflection</h2>
+          <p>Developing Vietnamese Breakfast was a meaningful experience, reflecting my connection to traditional Vietnamese food.
+             A key challenge was collision detection, especially for precise button clicks. Implementing a bounding box improved accuracy, enhancing user experience. 
+            This project deepened my understanding of game mechanics and interaction design.</p>
+          <img src="img/project1-reflection.png" alt="Image of my restart screen">
+     </section>
+
+     <section id="back-to-top">
+      <div class="back-to-top-button-container">
+        <a class="button-nav" href="about.html">BACK TO TOP </a>
+      </div>
+      <p class="copyright">® 2025. Annie Vo. All right reserved.</p>
+    </section>
+
+    
+     </body>
+
+<script>
+  // Add active class to the current button (highlight it)
+  var header = document.getElementByClass("menu-container");
+  var btns = header.getElementsByClassName("navigationItem");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }
+  </script>
+
+  <!-- Active State: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_active_element -->

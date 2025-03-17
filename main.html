@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+
+    <title></title>
+
+    </head>
+
+    <body>
+      <!-- NAVIGATION -->
+      <header>
+        <nav class="main-menu grid content-grid-menu add-gutters-menu">
+          <a class="logo" href="main.html"> <img src ="img/logo.png" alt="Logo of my portolio"></a>
+          <div class="menu-container" > 
+            <a href="main.html" class="navigationItem active">Work</a>
+            <a href="about.html" class="navigationItem">About</a>
+            <a a href="resume.html" class="navigationItem">Resume</a>
+          </div>
+          <div class="menu-container-2"> 
+            <a href="https://www.linkedin.com/in/annievo03/">LinkedIn</a>
+           </div>
+        </nav>
+      </header>
+
+      <!-- ABOUT ME -->
+      <section id="about-me">
+        <h2 class="greeting-text">Hello I'm</h2>
+        <h1> ANNIE VO</h1>
+        <p class="intro-text">I’m specialized in Animation, Illustration and Game Visual Design!</p>
+        <div class="about-me-button-container">
+          <a class="button-nav" href="about.html">ABOUT ME </a>
+        </div>
+      </section>
+
+      <section id="feature-project">
+      <h2 class="feature-project-title">My Projects</h2>
+
+      <div class="grid content-grid-two feature-project-container">
+        <div class="feature-project-container-card">
+          <a href="project.html"><img src="img/project1.png" alt="thumbnail of my first project"></a>
+          <div class="feature-project-container-card-detail">
+            <div class="grid content-grid-two-1 feature-project-container-card-heading">
+              <h3>Vietnamese Breakfast </h3>
+              <a class="window-icon" href="project.html"> <img src ="img/window-page.svg" alt="Window page icon"></a>
+            </div>
+            <p>Cooking simulation game that enhances Vietnamese culture by making multiple breakfast. </p>
+          </div>
+        </div>
+
+        <div class="feature-project-container-card">
+        <a><img src="img/project1.png" alt="thumbnail of my second project"></a>
+        <div class="feature-project-container-card-detail">
+          <div class="grid content-grid-two-1 feature-project-container-card-heading">
+            <h3>Vietnamese Breakfast </h3>
+            <a class="window-icon"> <img src ="img/window-page.svg" alt="Window page icon"></a>
+          </div>
+          <p>Cooking simulation game that enhances Vietnamese culture by making multiple breakfast. </p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="back-to-top">
+      <div class="back-to-top-button-container">
+        <a class="button-nav" href="about.html">BACK TO TOP </a>
+      </div>
+      <p class="copyright">® 2025. Annie Vo. All right reserved.</p>
+    </section>
+    </body>
+</html>
+
+<script>
+  // Add active class to the current button (highlight it)
+  var header = document.getElementByClass("menu-container");
+  var btns = header.getElementsByClassName("navigationItem");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }
+  </script>
+
+  <!-- Active State: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_active_element
+       Unorder List: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none
+  
+  -->

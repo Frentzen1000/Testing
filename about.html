@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">  
+    <link rel="stylesheet" href="css/about.css">  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+
+    <title></title>
+
+    </head>
+
+    <body>
+      <!-- NAVIGATION -->
+      <header>
+        <nav class="main-menu grid content-grid-menu add-gutters-menu">
+          <a class="logo" href="main.html"> <img src ="img/logo.png" alt="Logo of my portolio"></a>
+          <div class="menu-container" > 
+            <a href="main.html" class="navigationItem ">Work</a>
+            <a href="about.html" class="navigationItem active">About</a>
+            <a href="resume.html" class="navigationItem">Resume</a>
+          </div>
+          <div class="menu-container-2"> 
+            <a href="https://www.linkedin.com/in/annievo03/">LinkedIn</a>
+           </div>
+        </nav>
+      </header>
+
+      <!-- ABOUT ME -->
+      <section id="about-me">
+        <h2 class="greeting-text">About</h2>
+        <h1> ANNIE VO</h1>
+      </section>
+
+      <section id="more-about-me">
+      <h2 class="more-about-me-title">Who Am I</h2>
+
+      <div class="grid content-grid-two more-about-me-container">
+        <div class="more-about-me-detail">
+          <p>I am Annie Vo, and I am currently a third-year student majoring in Interactive Arts and Technology at Simon Fraser University. 
+            My journey into design began with a love for illustration and storytelling, which naturally led me to explore animation and visual game design.
+             Along the way, I have acquired expertise in user research, interface/visual design, filmmaking, game creation and illustration. 
+             My goal is to create immersive visual and narratives that connect with diverse audiences as well as address their pain points during their experience to the products while using creativity to bridge stories, emotions, and interactive experiences.
+          </p>
+        </div>
+
+        <div class="more-about-me-detail">
+        </div>
+      </div>     
+      </section>
+
+      <section id="skill">
+        <div class="grid content-grid-two skill-container">
+          <div class="skill-detail">
+            <h2 class="skill-heading">Skills</h2>
+            <ul>
+              <li> <img src="img/bullet-point.png" alt="Bullet Point" class="bullet-point">   Ideation Sketching</li>
+              <li> <img src="img/bullet-point.png" alt="Bullet Point" class="bullet-point">   3D Modeling</li>
+              <li> <img src="img/bullet-point.png" alt="Bullet Point" class="bullet-point">   UI Design</li>
+              <li> <img src="img/bullet-point.png" alt="Bullet Point" class="bullet-point">   Animation</li>
+              <li> <img src="img/bullet-point.png" alt="Bullet Point" class="bullet-point">   Usability Testing</li>
+              <li> <img src="img/bullet-point.png" alt="Bullet Point" class="bullet-point">   Prototyping</li>
+              <li> <img src="img/bullet-point.png" alt="Bullet Point" class="bullet-point">   Sound Design</li>
+            </ul>
+          </div>
+  
+          <div class="skill-detail">
+            <h2 class="skill-heading">Tools</h2>
+            <div class="grid content-grid-three">
+                <img src="img/figma-icon.png" alt="Figma Icon">
+                <img src="img/maya-icon.png" alt="Maya Icon">
+                <img src="img/eclipse-icon.png" alt="Eclipse Icon">
+             
+                <img src="img/aftereffect-icon.png" alt="After Effect Icon">
+                <img src="img/premierepro-icon.png" alt="Premiere Pro Icon">
+                <img src="img/illustrator-icon.png" alt="Illustrator Icon">
+        
+              
+                <img src="img/photoshop-icon.png" alt="Photoshop Icon">
+                <img src="img/indesign-icon.png" alt="Indesign Icon">
+                <img src="img/visualstudio-icon.png" alt="Visual Studio Icon">
+    
+            </div>
+
+            <ul>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="back-to-top">
+        <div class="back-to-top-button-container">
+          <a class="button-nav" href="about.html">BACK TO TOP </a>
+        </div>
+        <p class="copyright">® 2025. Annie Vo. All right reserved.</p>
+      </section>
+
+    </body>
+</html>
+
+<script>
+  // Add active class to the current button (highlight it)
+  var header = document.getElementByClass("menu-container");
+  var btns = header.getElementsByClassName("navigationItem");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }
+  </script>
+
+  <!-- Active State: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_active_element -->
