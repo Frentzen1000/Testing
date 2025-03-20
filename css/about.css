@@ -61,4 +61,36 @@
 }
 
 
+@media (min-width: 35rem) and (max-width: 55rem){
+
+  .tool-detail{
+    margin-top: 8rem;
+  }
+
+}
+
+@media (width < 35rem){
+
+  .tool-detail{
+    margin-top: 8rem;
+  }
+
+  .skill-container{
+    transform: translate(-2.5rem, 0);
+
+    
+    .skill-detail{
+      width: 90%;
+
+      ul{
+        transform: translate(-2.5rem, 0);
+        width: 70%;
+        
+      }
+    }
+    
+  }
+}
+
+
 

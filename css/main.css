@@ -97,7 +97,7 @@ header {
   text-decoration: none;
   background-color: black;
   border-radius: 10rem;
-  color: white; /* Make text white */
+  color: white; 
 }
 
 .menu-container {
@@ -123,6 +123,18 @@ header {
   margin-left: -3rem;
   text-decoration: underline;
 }
+
+.menu-container a{
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  border-radius: 10rem; 
+}
+
+.menu-container a:hover {
+  background-color: black;
+  color: white; 
+  border-radius: 10rem; 
+}
+
 
 /*ABOUT ME*/
 .about-me-button-container{
@@ -219,11 +231,15 @@ header {
 
   .content-grid-two{
     display: grid;
-  grid-template-columns: 0.8fr 0.8fr;
+    grid-template-columns: 0.8fr 0.8fr;
   }
 
   .content-grid-two-1{
     grid-template-columns: 0.8fr 0.2fr;
+  }
+
+  .content-grid-two-2{
+    grid-template-columns: 0.5fr 0.4fr;
   }
 
   .content-grid-three{
@@ -231,9 +247,11 @@ header {
     display: grid;
     justify-self: center;
     column-gap: 3rem;
-    row-gap: 2rem;
+    row-gap: 2rem; 
+  }
 
-    
+  .container_one{
+    width: 100%;
   }
 }
 
@@ -252,6 +270,10 @@ header {
     grid-template-columns: 0.8fr 0.2fr;
   }
 
+  .content-grid-two-2{
+    grid-template-columns: 0.7fr 0.4fr;
+  }
+
   .content-grid-three{
     grid-template-columns: 2.5fr 2.5fr;
     display: grid;
@@ -267,11 +289,26 @@ header {
 }
 
 @media (min-width: 35rem) and (max-width: 55rem){
-  .menu-container, .menu-container-2{
-  }
-
+ 
   .content-grid-two{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
+  .content-grid-three{
+    grid-template-columns: 2.5fr 2.5fr 2.5fr;
+    justify-self: center;
+    column-gap: 3rem;
+    row-gap: 2rem; 
+  }
+}
+
+@media (width < 35rem){
+
+  .content-grid-three{
+    grid-template-columns: 2.5fr;
+    display: grid;
+    justify-self: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
 }
