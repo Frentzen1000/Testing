@@ -167,7 +167,53 @@
 @media (width < 35rem) {
 
   .project-video{
-    width: 85vw;
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .project-title, .project-hero-section-detail h3, .project-hero-image, #more-about-first-project h3, #more-about-first-project h2, #more-about-first-project img{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-title{
+    width: 85%;
+
+  }
+
+  .project-hero-image{
+    margin-left: -6rem;
+    width: 125%
+  }
+
+  .project-hero-section-detail h3{
+    width: 140%;
+    margin-left: -9.5rem;
+  }
+
+  #more-about-first-project h3, #more-about-first-project h2{
+    margin-left: 1.5rem;
+    width: 85%;
+  }
+
+  #more-about-first-project h3{
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+
+  #more-about-first-project h2{
+    line-height: 2.5rem;
+  }
+
+  #more-about-first-project img{
+    margin-left: 1.5rem;
+  }
+
+  .project1-ideation-image, .project1-code-image{
+    margin-bottom: 2rem;
   }
 
 }

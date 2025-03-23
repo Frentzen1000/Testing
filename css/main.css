@@ -410,10 +410,14 @@ header.show-mobile-menu .menu-container-2 {
   }
 
   h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
     width: 100%;
     text-align: center;
     margin-left: 0;
+  }
+
+  h3{
+    font-size: 1.25rem;
   }
 
   .greeting-text{
