@@ -135,7 +135,7 @@
     margin-left: 0rem;
   }
   
-  .project-video,{
+  .project-video{
     width: 75%;
   }
 
@@ -160,8 +160,6 @@
   .swap-layout .project-right-image {
     grid-row: 1;
   }
-
-
 }
 
 
@@ -170,7 +168,6 @@
 
   .project-video{
     width: 85vw;
-    border: solid 5px blue;
-
   }
+
 }
