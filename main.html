@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,21 +17,22 @@
      <!-- Hamburger Icon Link -->
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 
-    <title></title>
+    <title>Annie Portfolio</title>
 
     </head>
 
-    <body>
+    <body id="body">
       <!-- NAVIGATION -->
       <header>
         <nav class="main-menu grid content-grid-menu add-gutters-menu navbar">
           <a class="logo" href="main.html"> <img src ="img/logo.png" alt="Logo of my portolio"></a>
           <div class="menu-container">
+            <!-- Hamburger icon: https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0 -->
             <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+              <!-- Active State: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_active_element -->
             <a href="main.html" class="navigationItem active">Work</a>
             <a href="about.html" class="navigationItem">About</a>
             <a href="resume.html" class="navigationItem">Resume</a>
-            <a href="https://www.linkedin.com/in/annievo03/" class="navigationItem linkedin-link">LinkedIn</a>
           </div>
            <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
         </nav>
@@ -74,20 +76,33 @@
       </div>
     </section>
 
+    <section id="contact">
+      <div class="grid content-grid-three-1 contact-section">
+        <h2> Get In Touch</h2>
+        <div class="contact-container">
+          <a> <img src ="img/email-icon.svg" alt="Email page icon" class="contact-icon"></a>
+          <p>waviezzz@gmail.com</p>
+        </div>
+        <div class="contact-container">
+          <a><img src ="img/linkedin-icon.svg" alt="LinkedIn icon" class="contact-icon"></a>
+          <p><a href="https://www.linkedin.com/in/annievo03/" class="linkedin-link">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
     <section id="back-to-top">
       <div class="back-to-top-button-container">
-        <a class="button-nav" href="about.html">BACK TO TOP </a>
+        <a class="button-nav" href="#body">BACK TO TOP</a>
       </div>
       <p class="copyright">® 2025. Annie Vo. All right reserved.</p>
     </section>
+
     </body>
 </html>
 
 <script>
-  // Add active class to the current button 
+  //Active state
   var header = document.getElementsByClassName("menu-container")[0];
-
-  //var header = document.getElementByClass("menu-container");
   var btns = header.getElementsByClassName("navigationItem");
   for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function() {
@@ -114,13 +129,3 @@
   }
 </script>
 
-  <!-- Active State: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_active_element
-       Unorder List: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none
-       Justify self: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self 
-       Translate: https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate
-       Grid row: https://www.w3schools.com/cssref/pr_grid-row.php
-       iFrame: https://www.w3schools.com/tags/tag_iframe.asp
-       Aspect-ratio: https://www.w3schools.com/Cssref/css_pr_aspect-ratio.php
-       Transition: https://www.w3schools.com/css/css3_transitions.asp
-  
-  -->

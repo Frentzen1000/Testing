@@ -34,7 +34,6 @@
 .project-hero-section-detail{
   margin-top: auto;
   margin-left: 3rem;
-
 }
 
 .project-hero-section-detail-item{
@@ -48,6 +47,7 @@
 .project-video{
   margin-left: 8rem;
   width: 91%;
+  /* Aspect-ratio: https://www.w3schools.com/Cssref/css_pr_aspect-ratio.php */
   aspect-ratio: 16 / 9; 
 }
 
@@ -114,6 +114,7 @@
 
   .swap-layout .project-left-text {
     margin-top: 2rem;
+    /* Grid row: https://www.w3schools.com/cssref/pr_grid-row.php */
     grid-row: 2; 
   }
   

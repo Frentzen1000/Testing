@@ -25,6 +25,11 @@ header.show-mobile-menu #close-menu-btn {
   margin-top: 1.1rem;
 }
 
+html {
+  /* Smooth Scroll: https://www.w3schools.com/HOWTO/howto_css_smooth_scroll.asp */
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -76,6 +81,7 @@ li{
   padding: 1rem 1.5rem;
   border-radius: 10rem;
   text-decoration: none;
+  /* Transition: https://www.w3schools.com/css/css3_transitions.asp */
   transition-property: background-color; 
   transition-property: font-size; 
   transition-duration: 0.25s;
@@ -86,8 +92,8 @@ li{
   color: #FFD4DE;
   border: 0.1rem solid #523E30;
   font-size: 0.95rem;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
+  justify-content: center; 
+  align-items: center; 
 }
 
 
@@ -107,7 +113,7 @@ header {
   transition-duration: 0.25s;
 }
 
-.menu-container a, .menu-container-2 a{
+.menu-container a{
   font-family: "Comfortaa", serif;
   white-space: nowrap;
   font-weight: 400;
@@ -127,6 +133,7 @@ header {
   color: white; 
 }
 
+
 .menu-container {
   display: flex;
   margin-top: 0.5rem;
@@ -134,23 +141,11 @@ header {
   justify-content: center;
   text-align: center;
   border-radius: 10rem;
-  width: 17.5rem;
-  border: 0.2rem solid white;
+  width: 24.5rem;
+  border: 0.2rem solid black;
   margin-left: auto; 
   margin-right: 2rem;
-  transform: translate(-2rem,0);
-  
-}
-
-.menu-container-2 {
-  display: flex;
-  margin-top: 0.5rem;
-  height: 3.2rem;
-  justify-content: center;
-  text-align: center;
-  margin-right: 2rem;
-  margin-left: -3rem;
-  text-decoration: underline;
+  transform: translate(1.5rem,0.25rem); 
 }
 
 .menu-container a{
@@ -162,10 +157,6 @@ header {
   background-color: black;
   color: white; 
   border-radius: 10rem; 
-}
-
-.menu-container .linkedin-link {
-  text-decoration: underline;
 }
 
 
@@ -241,6 +232,27 @@ header {
   margin-top: 0.5rem;
 }
 
+/* CONTACT */
+.linkedin-link {
+  text-decoration: underline;
+  color: black;
+}
+
+.contact-section{
+  margin-top: 4rem;
+}
+
+.contact-icon{
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 1rem;
+}
+
+.contact-container{
+  justify-self: center;
+  text-align: center;
+}
+
 
 /*BACK TO TOP*/
 .back-to-top-button-container{
@@ -278,6 +290,7 @@ header {
   .content-grid-three{
     grid-template-columns: 2.5fr 2.5fr 2.5fr;
     display: grid;
+  /* Justify self: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self  */
     justify-self: center;
     column-gap: 3rem;
     row-gap: 2rem; 
@@ -286,10 +299,21 @@ header {
   .container_one{
     width: 100%;
   }
+
+  .content-grid-three-1{
+    grid-template-columns: 3.5fr 2.5fr 2.5fr;
+    display: grid;
+  }
+
+  .content-grid-three-1 h2{
+    width: 110%;
+
+  }
 }
 
 
 @media (min-width: 55rem) and (max-width: 82rem) {
+
 
   .content-grid-menu{
     grid-template-columns: 0.7fr 3fr 0.2fr;
@@ -315,14 +339,40 @@ header {
     row-gap: 2rem;
   }
 
+  .content-grid-three-1 {
+    display: grid;
+    grid-template-rows: auto auto; 
+    /* Repeat function: https://developer.mozilla.org/en-US/docs/Web/CSS/repeat */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; 
+    align-items: center;
+  }
+
+  
+.content-grid-three-1 h2 {
+  margin-bottom: 2rem;
+  /* Grid column: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column  */
+  grid-column: 1 / -1;
+  text-align: center; 
+}
+  
   .feature-project-container-card-detail{
     padding-left: 1.5rem;
   }
     
 }
 
-@media (min-width: 35rem) and (max-width: 55rem){
+@media (min-width: 37rem) and (max-width: 55rem){
  
+  
+.menu-container {
+  margin-top: -5rem;
+}
+
+.logo{
+  margin-left: -1.25rem;
+}
+
   h1{
     font-size: 6rem;
   }
@@ -345,13 +395,40 @@ header {
     column-gap: 3rem;
     row-gap: 2rem; 
   }
+
+  .content-grid-three-1 {
+    display: grid;
+    grid-template-rows: auto auto; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; 
+    align-items: center;
+  }
+
+  
+.content-grid-three-1 h2 {
+  margin-bottom: 2rem;
+  grid-column: 1 / -1;
+  text-align: center; 
+}
+  
 }
 
-@media (width < 35rem){
+@media (width < 37rem){
 
+  .intro-text{
+    max-width: 90%;
+  }
+
+  .contact-icon{
+    width: 6rem;
+    height: 6rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0rem;
+  }
+  
   #hamburger-btn {
     display: block;
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   #close-menu-btn {
@@ -369,8 +446,7 @@ header {
     display: block;
   }
 
-  .menu-container,
-  .menu-container-2 {
+  .menu-container{
     position: fixed;
     top: 0;
     left: -100vw;
@@ -382,15 +458,15 @@ header {
     z-index: 2000;
     padding: 0;
     border-radius: 0;
+    /* Fade-in animation: https://blog.hubspot.com/website/css-fade-in  */
     transition: opacity 0.4s ease;
     opacity: 0;
     pointer-events: none;
     margin-top: -1rem;
     padding-left: 2rem;
-  }
+}
 
-header.show-mobile-menu .menu-container,
-header.show-mobile-menu .menu-container-2 {
+header.show-mobile-menu .menu-container{
   left: 0;
   opacity: 1;
   pointer-events: auto;
@@ -402,6 +478,7 @@ header.show-mobile-menu .menu-container-2 {
   text-decoration: none;
   margin: 0.5rem 1.5rem;
   text-align: left;  
+  /* Translate: https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate */
   transform: translate(0rem,-10rem); 
 }
 

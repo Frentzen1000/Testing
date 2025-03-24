@@ -33,6 +33,7 @@
   width: 80%;
   border-radius: 1.25rem;
 
+  /* Unorder List: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none */
   ul{
     line-height: 4rem;
     margin-left: 4rem;
@@ -58,6 +59,15 @@
 
 .bullet-point{
   margin-right: 1rem;
+}
+
+.black-line{
+  background-color: black;
+  margin: auto;
+  width: 82%;
+  height: 0.1rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 
 
