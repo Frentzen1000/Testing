@@ -71,10 +71,16 @@
 }
 
 
-@media (min-width: 35rem) and (max-width: 55rem){
+@media (min-width: 55rem) and (max-width: 82rem) {
+  .tool-detail{
+    padding-bottom: 4rem;
+  }
+}
 
+@media (min-width: 35rem) and (max-width: 55rem){
   .tool-detail{
     margin-top: 8rem;
+    padding-bottom: 4rem;
   }
 
 }

@@ -88,12 +88,8 @@ li{
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: #523E30 ;
-  color: #FFD4DE;
-  border: 0.1rem solid #523E30;
-  font-size: 0.95rem;
-  justify-content: center; 
-  align-items: center; 
+  font-size: 1.75rem;
+  opacity: 0.85
 }
 
 
@@ -268,6 +264,37 @@ header {
   font-size: 1rem;
 }
 
+/*FOOTER*/
+footer{
+ background-color: black;
+ color: white;
+}
+
+footer h2 {
+  margin-top: 2.5rem;
+  margin-left: 4rem;
+}
+
+.footer-container{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.logo2{
+  margin-left: 8rem;
+  width: 8rem;
+  height: auto;
+}
+
+.footerNavigationItem{
+  color: white;
+}
+
+.footer-menu-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem; 
+}
 
 @media (width > 82rem) {
   .content-grid-menu{
@@ -307,7 +334,11 @@ header {
 
   .content-grid-three-1 h2{
     width: 110%;
+  }
 
+  .content-grid-three-2{
+    grid-template-columns: 0.5fr 4fr 2.5fr;
+    display: grid;
   }
 }
 
@@ -359,7 +390,17 @@ header {
   .feature-project-container-card-detail{
     padding-left: 1.5rem;
   }
-    
+
+  .content-grid-three-2{
+    grid-template-columns: 0.5fr 4fr 2.5fr;
+    display: grid;
+  }
+
+  footer h2 {
+    width: 80%;
+    margin-top: 0;
+  }
+
 }
 
 @media (min-width: 37rem) and (max-width: 55rem){
@@ -390,7 +431,7 @@ header {
   }
 
   .content-grid-three{
-    grid-template-columns: 2.5fr 2.5fr 2.5fr;
+    grid-template-columns: 2.5fr 2.5fr;
     justify-self: center;
     column-gap: 3rem;
     row-gap: 2rem; 
@@ -410,7 +451,30 @@ header {
   grid-column: 1 / -1;
   text-align: center; 
 }
-  
+
+.content-grid-three-2{
+  grid-template-columns: 0.5fr 1fr 2.5fr;
+  display: grid;
+}
+
+.footer-container{
+  margin-left: -4rem;
+}
+
+.logo2{
+  width: 6rem;
+  height: auto;
+}
+
+footer h2 {
+  margin-top: 0;
+}
+
+.footerNavigationItem{
+  margin-left: -3rem;
+}
+
+
 }
 
 @media (width < 37rem){
@@ -463,7 +527,7 @@ header {
     opacity: 0;
     pointer-events: none;
     margin-top: -1rem;
-    padding-left: 2rem;
+    margin-left: -2rem;
 }
 
 header.show-mobile-menu .menu-container{
@@ -528,6 +592,30 @@ header.show-mobile-menu .menu-container{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  footer{
+    width: 100%;
+  }
+
+  .content-grid-three-2 {
+    display: grid;
+    grid-template-columns: 1fr;   
+    gap: 1rem;                        
+    justify-items: center;           
+    text-align: center;             
+    padding: 2rem 1rem;
+  }
+
+  .logo2, footer h2, .footerNavigationItem{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .footerNavigationItem{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
   }
 
 }
