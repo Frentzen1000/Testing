@@ -88,8 +88,17 @@
   .person-image{
     width: 22.5rem;
     height: auto;
+    margin-right: 2rem;
+    margin-left: 4rem;
   }
 
+  .more-about-me-container{
+    width: 100%;
+  }
+
+  .more-about-me-container{
+    width: 80%;
+  }
 }
 
 @media (min-width: 35rem) and (max-width: 55rem){
@@ -99,25 +108,37 @@
   }
 
   .more-about-me-container{
-    width: 120%;
+    width: 100%;
   }
 
   .more-about-me-detail p, .more-about-me-title{
-    margin-left: -3rem;
+    margin-left: 0;
     text-align: left;
   }
 
   .more-about-me-detail p{
-    width: 60%;
-  }
+    width: 100%; 
+   }
 
+   .more-about-me-detail {
+    width: 100%;
+  }
   .person-image {
     width: 22rem;
-    margin-left: -2.5rem;
-    margin-top: 1rem;
+    height: auto;
+    margin: 0 auto;
+    display: block;
   }
 
- 
+  #more-about-me{
+    width: 100%;
+  }
+
+  .more-about-me-container{
+    margin-left: 7rem;
+    width: 80%;
+  }
+
 
 }
 
@@ -158,6 +179,8 @@
     margin-top: 1rem;
     width: 15rem;
     height: auto;
+    margin: 0; 
+
   }
 
   
