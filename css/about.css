@@ -99,6 +99,11 @@
   .more-about-me-container{
     width: 80%;
   }
+
+  .more-about-me-title {
+    width: 100%;
+  }
+  
 }
 
 @media (min-width: 35rem) and (max-width: 55rem){
@@ -139,6 +144,10 @@
     width: 80%;
   }
 
+  .more-about-me-title{
+    width: 60%;
+  }
+
 
 }
 
@@ -175,12 +184,19 @@
   }
 
   .person-image {
-    margin-left: -5rem;
     margin-top: 1rem;
     width: 15rem;
     height: auto;
     margin: 0; 
+    margin-left: -5rem;
+  }
 
+  .more-about-me-title{
+    width: 100%;
+  }
+
+  .skill-detail{
+    margin-left: -2rem;
   }
 
   
